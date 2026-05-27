@@ -30,9 +30,10 @@ https://obsproject.com/forum/resources/muted-notification.1706/
 https://obsproject.com/forum/resources/input-overlay.552/
 * Only works under X11/Xwayland, you need the xcb launch option (see above) and must allow X11 apps to read keystrokes (at least on KDE Plasma)
 
-#### linux-pipewire-audio
+#### PipeWire Audio Capture
 https://obsproject.com/forum/resources/pipewire-audio-capture.1458/
 * Allows whitelist/blacklist audio capture (for example an audio source that captures everything except Discord, Steam and Firefox)
+* Will probably be added to OBS someday, see https://github.com/obsproject/obs-studio/pull/6207 (currently waiting "due to lack of upstream consensus on the correct implementation details")
 
 #### obs-multi-rtmp
 https://github.com/sorayuki/obs-multi-rtmp
@@ -59,7 +60,7 @@ https://firebot.app/
 
 ## Kdenlive
 * Video editor. Don't use Davinci Resolve because it's not officially supported on any distro except (I think) Rocky and RHEL. There are community-made workarounds but they tend to be somewhere from a little to a lot of hassle - if they even still work. Would probably recommend davincibox if you must have Resolve.
-* TODO: find reddit post with info about no AMD HW accel unless paid
+* TODO: find reddit post with info about no AMD HW accel unless paid but only on Linux, Windows has it for free
 
 ## Constrict
 https://flathub.org/en/apps/io.github.wartybix.Constrict
