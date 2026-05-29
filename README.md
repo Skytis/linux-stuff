@@ -6,6 +6,19 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 * Avoid Snaps if possible, they are often outdated (sometimes months, a year or even more) and sometimes not tested properly (for example they rolled out a beta version of Slack to everyone which didn't work)
 * I prefer flat as a packaging format because they work on every distro, so most links are flat. Some programs require extra tinkering for the flat version due to permission shenanigans and for some programs I haven't figured that out, so I don't use the flat version
 
+# Kubuntu
+
+## Kernel Panic on boot
+* Happens to me after every kernel update. Wasn't always the case. Fix: https://askubuntu.com/questions/41930/kernel-panic-not-syncing-vfs-unable-to-mount-root-fs-on-unknown-block0-0
+  * Enter boot menu and note the kernel version of the newest one
+  * Boot with a previous kernel version
+  * Run `sudo update-initramfs -u -k 7.0.0-22-generic` (put in the newest kernel version)
+  * Run `sudo update-grub`
+  * Reboot and you can now use the newer kernel version
+
+## AppImages don't work
+* You need to allow it in AppArmor, see https://askubuntu.com/questions/1512287/obsidian-appimage-the-suid-sandbox-helper-binary-was-found-but-is-not-configu/1528215#1528215
+
 # Streaming/Recording
 
 ## [GPU Screen Recorder](https://flathub.org/en/apps/com.dec05eba.gpu_screen_recorder)
@@ -127,7 +140,7 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 * Firefox fork without the telemetry stuff
 * Recommended extensions: Dark Reader (dark mode), DeArrow (replace clickbait thumbnails), KeePassXC-Browser, PocketTube (hide specific types of videos, like live or shorts, from your subscription page, also gets rid of the "Most relevant" shelf), Return YouTube Dislike (to help spot bad videos), SponsorBlock (skip sponsor segments aka ads inside of videos), uBlock Origin, uMatrix (only for advanced users, will break lots of websites, requires tinkering), YouTube Search Fixer
 * The flat version does not work with the KeePassXC extension (without very hacky workarounds I couldn't figure out)
-* For the standalone version to work with KeePassXC, this is probably right https://keepassxc.org/docs/KeePassXC_UserGuide#_custom_browser_option but I think I created `/home/skytis/.var/app/net.waterfox.waterfox/.waterfox/native-messaging-hosts/org.kde.plasma.browser_integration.json` but there might have been extra steps I'm forgetting, if so, search the internet, I found the solution somewhere, probably in a forum post
+* For the standalone version to work with KeePassXC, this is probably right https://keepassxc.org/docs/KeePassXC_UserGuide#_custom_browser_option but I think I created `/home/skytis/.var/app/net.waterfox.waterfox/.waterfox/native-messaging-hosts/org.kde.plasma.browser_integration.json` but there might have been extra steps I'm forgetting. This is what I think I used https://www.reddit.com/r/KeePass/comments/1j3v14t/comment/mh5kg60/?solution=264dd9fd131ec066264dd9fd131ec066&js_challenge=1&token=7afd7253fec22262ff1c52b1703fe9ecb3bdbc210612db11733dc5c3b9f29c7f&jsc_orig_r=
 ```
 {
     "allowed_extensions": [
