@@ -49,7 +49,16 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 * I couldn't do more than 2 platforms. When I did 3 (first one directly from OBS, second one with separate settings via multi-rtmp, third one using the same encode as the second also via multi-rtmp), I'd get lots of dropped frames, regardless of bitrate
 
 #### [obs-vkcapture](https://github.com/nowrep/obs-vkcapture)
-* (not tested yet) Should allow Windows-style captures that don't need to be configured every time the game/program is restarted
+* Have not tested this much
+* Allows Windows-style captures that don't need to be configured every time the game/program is restarted
+* Building
+  * I was missing SIMDe dependencies, `sudo apt install libsimde-dev`
+  * Follow instructions from the readme
+    * `mkdir build && cd build`
+    * `cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release ..`
+    * `make && make install` (I had to run `make && sudo make install`)
+* Add the game capture source to your scene(s) and configure it if desired
+* If I understand it correctly, it does not capture hardware cursors, so the cursor only shows up in games with software cursors (some games might have a setting to switch this). See https://github.com/nowrep/obs-vkcapture/issues/259
 
 ### Companion software
 
