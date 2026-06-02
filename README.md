@@ -172,6 +172,12 @@ Icon=/home/skytis/.local/bin/waterfox/waterfox.svg
 Terminal=false
 Categories=Internet;
 ```
+* To give Waterfox an icon when alt-tabbing, I created a window rule
+  * Window class: exact match `waterfox`
+  * Match whole window class: no
+  * Window types: all selected
+  * Desktop file name: apply initially `Waterfox`
+
 ## Discord
 * Avoid the Snap version because it spams your journalctl every 5 seconds if you have apparmor (because Discord wants to read your processes but it is blocked). Workaround is either allowing it (if you want that) or using the flat version (note that you can't change the default keybinds in the flat version, you have to set up an additional hotkey, so for example you have the default mute hotkey ctrl+shift+M but also the custom one alt+numpad4 which you use)
 * [Vencord](https://flathub.org/en/apps/dev.vencord.Vesktop) does work, but when you stream something it will have no audio OR it will route the audio through the microphone channel (which doesn't sound great AND means your actual microphone isn't being sent so you are effectively muted). Last tested around late 2025
