@@ -89,13 +89,22 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 * Run Windows programs. For most games you want to use Proton (which is based on Wine), but some stuff only works with Wine directly. I only really use it for Cheat Engine and Diablo
 * Might also want to install [Winetricks](https://github.com/Winetricks/winetricks) and protontricks for tinkering
 
-## [protonhax](https://github.com/jcnils/protonhax) & [Cheat Engine](https://www.cheatengine.org/)
-* Allows Cheat Engine to see the game's process so you can actually use it.
+## Cheat Engine and similar tools
+
+### [Squalr](https://github.com/Squalr/Squalr)
+* Tested super briefly, does work without any further setup
+
+### Cheat Engine
+* **I'd recommend to avoid it, read [here](https://www.reddit.com/r/linux_gaming/comments/1tzpfk9/comment/oqdwrbv/), especially the linked [GitHub issue](https://github.com/cheat-engine/cheat-engine/issues/3049)**
+* If you really want to/must use Cheat Engine, it did work without major issues based on my experience
+
+#### [protonhax](https://github.com/jcnils/protonhax) & [Cheat Engine](https://www.cheatengine.org/)
+* Allows Cheat Engine to see the game's process so you can actually use it. Probably works with other similar software
 * Download the Windows version of Cheat Engine, run the installer via Wine (`wine ./whateverthesetupiscalled.exe`)
 * Set the game's launch parameters to `protonhax init %COMMAND%` in Steam, launch it
 * Go to the Cheat Engine folder `/home/skytis/.wine/drive_c/Program Files/Cheat Engine/` and run `protonhax cmd <steamAppId>` (obviously replace the Id), then in that cmd run `start "" "Cheat Engine.exe"`. Do not omit the quotation marks
 
-### Linux version of Cheat Engine
+#### Linux version of Cheat Engine
 * Very new (May 2026), currently only available as trial mode (not sure what the limitations are, if there are any, might be a WinRAR type of situation) unless you support on Patreon
 * Gives a hint/warning to use the Windows version when selecting Proton games but does work without any further setup/launch options (tested ultra briefly, literally one value in one game)
 
