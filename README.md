@@ -95,6 +95,10 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 * Set the game's launch parameters to `protonhax init %COMMAND%` in Steam, launch it
 * Go to the Cheat Engine folder `/home/skytis/.wine/drive_c/Program Files/Cheat Engine/` and run `protonhax cmd <steamAppId>` (obviously replace the Id), then in that cmd run `start "" "Cheat Engine.exe"`. Do not omit the quotation marks
 
+### Linux version of Cheat Engine
+* Very new (May 2026), currently only available as trial mode (not sure what the limitations are, if there are any, might be a WinRAR type of situation) unless you support on Patreon
+* Gives a hint/warning to use the Windows version when selecting Proton games but does work without any further setup/launch options (tested ultra briefly, literally one value in one game)
+
 ## [Heroic Games Launcher](https://flathub.org/en/apps/com.heroicgameslauncher.hgl)
 * For non-Steam stores (GOG etc.)
 * I only tested one game (Pinball Spire) but no issue there
