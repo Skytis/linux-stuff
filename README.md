@@ -125,6 +125,13 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
   * Need to adjust the command-line argument to `--no-sandbox %U`; if using the KDE Plasma "start menu" you have to change the entry after every update because it reverts to `--sandbox %U`
 * [Path of Building](https://flathub.org/en/apps/community.pathofbuilding.PathOfBuilding)
 
+## Rocksmith, Slopsmith, [fee\[dB\]ack](https://github.com/got-feedBack)
+* Getting Rocksmith 2014 running on Linux is a massive pain, I eventually gave up because I didn't care enough (haven't tried 2012 because it's simply a worse version and I don't think I've heard a single good thing about Rocksmith+)
+* fee\[dB\]ack (formerly known as Slopsmith) is kind of like an open source Rocksmith. Currently still early in development and there are quite a few minor issues but it does work (I've used the AppImage of the desktop version).
+  * They renamed it after [getting DMCA'd by Ubisoft](https://www.reddit.com/r/rocksmith/comments/1u6jg96/dmca_takedown_notice_for_slopsmith/) because Slopsmith could read and convert the Rocksmith song files
+  * If you can get Slopsmith you can use that to convert your Rocksmith DLCs (official and custom) into sloppaks (which fee\[dB\]ack can read). You will need version 0.2.9 or older as it was renamed with 0.3.0 (and the conversion functionality removed). Unfortunately most (if not all) repos of it and its forks got taken down
+  * There is probably other software/plugins that allow you to use Rocksmith DLCs in fee\[dB\]ack
+
 ## Speedrunning
 * Diablo https://www.speedrun.com/diablo/guides/muv82 (currently doesn't work with newer LiveSplit versions, must install an older one that doesn't require .NET 4.8.1 (4.8 is fine))
 * Left 4 Dead 2 https://l4dsr.github.io/l4dsr-wiki/docs/tutorials/welcome/linux
