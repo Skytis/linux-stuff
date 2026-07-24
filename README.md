@@ -123,6 +123,8 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 * The game ran better for me in DX12 mode than Vulkan, see my [ProtonDB report](https://www.protondb.com/app/238960#JAWOsZVYaH)
 * [Awakened PoE Trade](https://github.com/SnosMe/awakened-poe-trade)
   * Need to adjust the command-line argument to `--no-sandbox %U`; if using the KDE Plasma "start menu" you have to change the entry after every update because it reverts to `--sandbox %U`
+  * Currently only works for me if PoE is launched via Proton 10 and if APT is launched from the terminal via `XDG_SESSION_TYPE=x11 ./awakened_poe_trade.appimage --no-sandbox`. Putting the same settings in via Gear Lever and starting it from there or via the KDE "start menu" doesn't work
+  * If it doesn't work for you, check the github issues. Search for Linux and see what other workarounds people share. Check the date, so you don't try a 3 year old fix that is obsolete by now anyway
 * [Path of Building](https://flathub.org/en/apps/community.pathofbuilding.PathOfBuilding)
 
 ## Rocksmith, Slopsmith, [fee\[dB\]ack](https://github.com/got-feedBack)
