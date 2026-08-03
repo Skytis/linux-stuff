@@ -36,13 +36,10 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 #### [Muted notification](https://obsproject.com/forum/resources/muted-notification.1706/)
 * Adds an audio "filter" that plays a sound when there's output on the device but it is muted (basically a reminder to unmute)
 
-#### [input-overlay](https://github.com/girlglock/input-overlay) (Separate Program)
-* Shows the keys you are pressing
-* Does not require special workarounds
-
 #### [input-overlay](https://obsproject.com/forum/resources/input-overlay.552/) (OBS Plugin)
 * Shows the keys you are pressing
 * Only works under X11/Xwayland, you need the xcb launch option (see above) and must allow X11 apps to read keystrokes (at least on KDE Plasma)
+* Not recommended. Use girlglock's input overlay (see Companion Software)
 
 #### [PipeWire Audio Capture](https://obsproject.com/forum/resources/pipewire-audio-capture.1458/)
 * Allows whitelist/blacklist audio capture (for example an audio source that captures everything except Discord, Steam and Firefox)
@@ -64,7 +61,11 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 * Add the game capture source to your scene(s) and configure it if desired
 * If I understand it correctly, it does not capture hardware cursors, so the cursor only shows up in games with software cursors (some games might have a setting to switch this). See https://github.com/nowrep/obs-vkcapture/issues/259
 
-### Companion software
+### Companion Software
+
+#### [input-overlay](https://github.com/girlglock/input-overlay) (Separate Program)
+* Shows the keys you are pressing
+* Does not require special workarounds
 
 #### [Social Stream Ninja](https://github.com/steveseguin/social_stream)
 * Unified chat from multiple platforms (Twitch, YouTube, Kick, TikTok, etc.)
