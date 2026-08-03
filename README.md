@@ -36,7 +36,11 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 #### [Muted notification](https://obsproject.com/forum/resources/muted-notification.1706/)
 * Adds an audio "filter" that plays a sound when there's output on the device but it is muted (basically a reminder to unmute)
 
-#### [input-overlay](https://obsproject.com/forum/resources/input-overlay.552/)
+#### [input-overlay](https://github.com/girlglock/input-overlay) (Separate Program)
+* Shows the keys you are pressing
+* Does not require special workarounds
+
+#### [input-overlay](https://obsproject.com/forum/resources/input-overlay.552/) (OBS Plugin)
 * Shows the keys you are pressing
 * Only works under X11/Xwayland, you need the xcb launch option (see above) and must allow X11 apps to read keystrokes (at least on KDE Plasma)
 
