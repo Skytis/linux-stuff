@@ -171,6 +171,10 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 ## [KDE Connect](https://kdeconnect.kde.org/)
 * Connect your computer and phone (or other computers) to send files, share the clipboard or send remote inputs
 
+## [footswitch](https://github.com/rgerganov/footswitch)
+* Software to remap my foot pedal (iKKEGOL FS2016-A (I don't recommend to use Amazon, but [here's the link](https://www.amazon.de/dp/B01NAL3DV6) in case you can't find it and want the exact same one for whatever reason)). The official software is only available for Windows, see [their website](https://pcsensor.com/download/)
+* My food pedal only has one switch/button, other pedals might need other software. Check [footswitch-rs](https://github.com/Silicon1602/footswitch-rs) (haven't tested) or [pedalctl](https://github.com/Schmoller/pedalctl/) (had to fix some errors before I could build it and it didn't work with my pedal)
+
 # General programs
 ## [Waterfox](https://www.waterfox.com/download/)
 * Firefox fork without the telemetry stuff
