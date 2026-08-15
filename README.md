@@ -131,6 +131,7 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
   * Currently only works for me if PoE is launched via Proton 10
   * If it doesn't work for you, check the github issues. Search for Linux and see what other workarounds people share. Check the date, so you don't try a 3 year old fix that is obsolete by now anyway
 * [Path of Building](https://flathub.org/en/apps/community.pathofbuilding.PathOfBuilding)
+* [clickr](https://github.com/Wavefire5201/clickr) for spam clicking (for example to move stuff to stash)
 
 ## Rocksmith, Slopsmith, [fee\[dB\]ack](https://github.com/got-feedBack)
 * Getting Rocksmith 2014 running on Linux is a massive pain, I eventually gave up because I didn't care enough (haven't tried 2012 because it's simply a worse version and I don't think I've heard a single good thing about Rocksmith+)
