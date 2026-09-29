@@ -176,6 +176,11 @@ A collection of Linux programs, utilities, workarounds and other relevant notes.
 * Software to remap my foot pedal (iKKEGOL FS2016-A (I don't recommend to use Amazon, but [here's the link](https://www.amazon.de/dp/B01NAL3DV6) in case you can't find it and want the exact same one for whatever reason)). The official software is only available for Windows, see [their website](https://pcsensor.com/download/)
 * My food pedal only has one switch/button, other pedals might need other software. Check [footswitch-rs](https://github.com/Silicon1602/footswitch-rs) (haven't tested) or [pedalctl](https://github.com/Schmoller/pedalctl/) (had to fix some errors before I could build it and it didn't work with my pedal)
 
+## [NoiseTorch](https://github.com/noisetorch/NoiseTorch)
+* Provides a noise filtered virtual microphone. Useful if you have a sensitive, proper microphone and want to play things like Lethal Company or R.E.P.O. (or you just don't to be a nuisance to others due to constant background noise)
+* Project seems to no longer be updated. There might be other/better/newer alternatives
+* You can also use Easy Effects but that is applied on the microphone itself. From my testing (in maybe early to mid 2026) Easy Effects' noise suppression worsens the quality a bit more than Discord's or OBS' noise filters, so I use those when I can and use Noise Torch for the other situations
+
 # General programs
 ## [Waterfox](https://www.waterfox.com/download/)
 * Firefox fork without the telemetry stuff
@@ -213,6 +218,11 @@ Categories=Internet;
 ## Discord
 * Avoid the Snap version because it spams your journalctl every 5 seconds if you have apparmor (because Discord wants to read your processes but it is blocked). Workaround is either allowing it (if you want that) or using the flat version (note that you can't change the default keybinds in the flat version, you have to set up an additional hotkey, so for example you have the default mute hotkey ctrl+shift+M but also the custom one alt+numpad4 which you use)
 * [Vencord](https://flathub.org/en/apps/dev.vencord.Vesktop) does work, but when you stream something it will have no audio OR it will route the audio through the microphone channel (which doesn't sound great AND means your actual microphone isn't being sent so you are effectively muted). Last tested around late 2025
+
+## [Fluxer](https://fluxer.app/)
+* Open source Discord alternative/clone/whatever you want to call it. Can be self hosted (though it's currently fairly complicated but should be easier in the future)!
+* Currently still in beta but most of Discord's features are replicated already
+* Obviously doesn't have the userbase of Discord, but nothing is stopping you from using both
 
 ## [FreeTube](https://flathub.org/en/apps/io.freetubeapp.FreeTube)
 * Privacy focused YouTube app. I like to use it to watch videos that I don't want to give a "view" (usually ones with terrible titles)
