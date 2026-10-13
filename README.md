@@ -2,8 +2,9 @@
 A collection of Linux programs, utilities, workarounds and other relevant notes. Mainly for myself for future reference, but hopefully other people will find this useful too.
 
 # General notes
-* I use Kubuntu (currently 26.04) and hate X11, so stuff might be different if you're on another distro, especially if it's not Debian-based and/or if you use X11 (ew)
-* Avoid Snaps if possible, they are often outdated (sometimes months, a year or even more) and sometimes not tested properly (for example they rolled out a beta version of Slack to everyone which didn't work)
+* I use CachyOS (since October 2026), so newer notes will be for that
+* I used Kubuntu (26.04) previously and hate X11, so stuff might be different if you're on another distro, especially if it's not Debian-based and/or if you use X11 (ew)
+  * Avoid Snaps if possible, they are often outdated (sometimes months, a year or even more) and sometimes not tested properly (for example they rolled out a beta version of Slack to everyone which didn't work)
 * I prefer flat as a packaging format because they work on every distro, so most links are flat. Some programs require extra tinkering for the flat version due to permission shenanigans and for some programs I haven't figured that out, so I don't use the flat version
 
 # Kubuntu
@@ -214,6 +215,7 @@ Categories=Internet;
   * Match whole window class: no
   * Window types: all selected
   * Desktop file name: apply initially `Waterfox`
+* The version from the Seafoam Labs recommended repo works out of the box with KeePassXC and has proper icons
 
 ## Discord
 * Avoid the Snap version because it spams your journalctl every 5 seconds if you have apparmor (because Discord wants to read your processes but it is blocked). Workaround is either allowing it (if you want that) or using the flat version (note that you can't change the default keybinds in the flat version, you have to set up an additional hotkey, so for example you have the default mute hotkey ctrl+shift+M but also the custom one alt+numpad4 which you use)
